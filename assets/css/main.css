@@ -172,4 +172,14 @@ footer {
   .hero p {
     font-size: 1.2rem;
   }
+  .site-logo {
+  height: 50px;          /* Change to fit your logo */
+  width: auto;
+  display: block;
+  }
+
+/* Optional: Make logo clickable to home */
+.site-logo {
+  cursor: pointer;
+  }
 }
