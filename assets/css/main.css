@@ -173,8 +173,9 @@ footer {
     font-size: 1.2rem;
   }
   .site-logo {
-  height: 50px;          /* Change to fit your logo */
-  width: auto;
+  height: 40px;          /* Try 40-60px; adjust to fit your header nicely */
+  width: auto;           /* Keeps proportions */
+  max-width: 200px;      /* Optional safety limit */
   display: block;
   }
 
