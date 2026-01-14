@@ -13,12 +13,12 @@ body {
 
 /* Header / Navigation */
 header {
-  background: #FFFFFF;
-  color: white;
+  background: #ffffff;
   padding: 1rem;
   position: sticky;
   top: 0;
   z-index: 100;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* subtle shadow for separation */
 }
 
 nav {
@@ -30,24 +30,35 @@ nav {
 }
 
 .logo {
-  font-size: 1.8rem;
-  font-weight: bold;
+  flex: 1;
+  text-align: center; /* centers the logo container */
 }
 
+.site-logo {
+  height: 60px;              /* adjust as needed for your logo */
+  width: auto;
+  max-width: 250px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;            /* ensures horizontal centering */
+}
+
+/* Nav links */
 nav ul {
   list-style: none;
   display: flex;
   gap: 2rem;
+  margin: 0;
 }
 
 nav a {
-  color: white;
+  color: #0d2645;            /* Dark Blue */
   text-decoration: none;
   font-weight: 500;
 }
 
 nav a:hover {
-  color: #3498db;
+  color: #ca1f31;            /* Red on hover */
 }
 
 /* Hero Banner */
@@ -88,7 +99,7 @@ nav a:hover {
 
 .btn {
   display: inline-block;
-  background: #3498db;
+  background: #ca1f31;       /* Red */
   color: white;
   padding: 0.8rem 2rem;
   text-decoration: none;
@@ -97,7 +108,7 @@ nav a:hover {
 }
 
 .btn:hover {
-  background: #2980b9;
+  background: #0d2645;       /* Dark Blue on hover */
 }
 
 /* Services Section */
@@ -110,6 +121,7 @@ nav a:hover {
 .services-overview h2 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
+  color: #164273;            /* Blue for heading */
 }
 
 .service-grid {
@@ -124,7 +136,7 @@ nav a:hover {
   background: white;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px #edede8; /* Shadow color */
   opacity: 0;
   transform: translateY(30px);
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
@@ -138,7 +150,9 @@ nav a:hover {
 
 .service-item h3 {
   padding: 1rem;
-  background: #ecf0f1;
+  background: #f1b716;       /* Yellow accent */
+  color: #0d2645;
+  margin: 0;
 }
 
 .service-item.fade-in {
@@ -148,7 +162,7 @@ nav a:hover {
 
 /* Footer */
 footer {
-  background: #2c3e50;
+  background: #0d2645;       /* Dark Blue */
   color: white;
   text-align: center;
   padding: 2rem;
@@ -156,6 +170,10 @@ footer {
 
 .footer-content p {
   margin: 0.5rem 0;
+}
+
+.footer-content a {
+  color: #f1b716;            /* Yellow for links if added */
 }
 
 /* Responsive */
@@ -172,16 +190,9 @@ footer {
   .hero p {
     font-size: 1.2rem;
   }
-  .site-logo {
-    height: 40px !important;     /* Force the height */
-    width: auto !important;
-    max-width: 180px !important; /* Prevents it from growing too wide */
-    object-fit: contain;         /* Keeps proportions without distortion */
-    display: block;
-  }
 
-/* Optional: Make logo clickable to home */
-.site-logo {
-  cursor: pointer;
+  .site-logo {
+    height: 50px;            /* smaller on mobile */
+    max-width: 200px;
   }
 }
