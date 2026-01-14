@@ -192,7 +192,7 @@ footer {
   }
 
   .site-logo {
-    height: 50px;            /* smaller on mobile */
+    height: 100px;            /* smaller on mobile */
     max-width: 200px;
   }
 }
