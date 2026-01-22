@@ -184,10 +184,6 @@ nav a:hover {
   box-shadow: 0 4px 12px rgba(0, 100, 255, 0.1) !important;
 }
 
-/* Accent stars/ratings/links if visible */
-.sociablekit-embed .sk-rating, a {
-  color: #0066cc !important;    /* Vibrant blue */
-}
 
 /* Footer */
 footer {
