@@ -163,26 +163,26 @@ nav a:hover {
 /* Reviews Section */
 
 .reviews-section {
-  margin: 40px 0;
+  margin: 40px auto;
   padding: 20px;
-  background-color: #f9f9f9;
+  max-width: 1200px;
+  background: #f9f9f9;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .reviews-container {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
-  justify-content: center;
 }
 
-.reviews-container > div {  /* Targets individual reviews if widget uses divs */
-  max-width: 300px;
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  background: white;
+/* Optional overrides if widget looks off (inspect live to target exact classes) */
+.sociablekit-embed, .sk-review-item {
+  background: white !important;
+  border: 1px solid #ddd !important;
+  border-radius: 6px !important;
+  padding: 15px !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
 }
 
 /* Footer */
