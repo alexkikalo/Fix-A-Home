@@ -160,6 +160,18 @@ nav a:hover {
   transform: translateY(0);
 }
 
+/* Reviews Section */
+.reviews {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: #f9f9f9;
+}
+
+.reviews h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #164273;
+
 .reviews-section {
   margin: 40px 0;
   padding: 20px;
