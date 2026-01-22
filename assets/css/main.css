@@ -160,6 +160,29 @@ nav a:hover {
   transform: translateY(0);
 }
 
+.reviews-section {
+  margin: 40px 0;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.reviews-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.reviews-container > div {  /* Targets individual reviews if widget uses divs */
+  max-width: 300px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: white;
+}
+
 /* Footer */
 footer {
   background: #0d2645;
